@@ -1,51 +1,77 @@
 .App {
   text-align: center;
+  display: grid;
+  grid-template-areas: "painel"
+                        "container";
+  justify-content: center;                      
+}
+.painel{
+  grid-area: painel;
+  width: 306px;
+  height: 50px;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(57, 53, 50);
+  color: aliceblue;
+  margin-bottom: 8px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 8px ;
 }
 .container {
+  grid-area: container;
   display: grid;
   grid-template-areas: "um dois tres"
                        "quatro cinco seis"
                        "sete oito nove"
   ;
   justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .um {
+  grid-area: um;
   border-right:#000000 solid;
   border-bottom:#000000 solid;
 }
 .dois {
+  grid-area: dois;
   border-right:#000000 solid;
   border-bottom:#000000 solid;
 }
 
 .tres {
+  grid-area: tres;
   border-bottom:#000000 solid;
 }
 
 .quatro {
+  grid-area: quatro;
   border-right:#000000 solid;
   border-bottom:#000000 solid;
 }
 .cinco {
+  grid-area: cinco;
   border-right:#000000 solid;
   border-bottom:#000000 solid;
 }
 
 .seis {
+  grid-area: seis;
   border-bottom:#000000 solid;
 }
 
 .sete {
+  grid-area: sete;
   border-right:#000000 solid;
 }
 .oito {
+  grid-area: oito;
   border-right:#000000 solid;
 }
-
+.nove {
+  grid-area: nove;
+}
 .quadrado {
   height: 100px;
   width: 100px;

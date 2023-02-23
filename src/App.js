@@ -1,10 +1,10 @@
-import cavalo from './cavalo.svg'
 import './App.css';
 
 function App() {
   
 return (
     <div className="App">
+      <div className="painel">Vez: O</div>
       <div className="container">
         <div className="quadrado um"></div>
         <div className="quadrado dois"></div>
